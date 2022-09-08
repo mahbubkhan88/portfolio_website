@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ADMIN</title>
+    <title>@yield('title') - Welcome to Dashboard</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="{{ asset('backend/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/css/mdb.min.css') }}">
@@ -40,6 +40,10 @@
     <script src="{{ asset('backend/js/datatables-select.min.js') }}"></script>
     <script src="{{ asset('backend/js/custom.js') }}"></script>
     <script src="{{ asset('backend/js/axios.min.js') }}"></script>
+
+    
+    @yield('script')
+
 </body>
 
 </html>

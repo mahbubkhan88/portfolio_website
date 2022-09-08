@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\VisitorModel;
+use App\ServiceModel;
 
 class HomeController extends Controller
 {
@@ -22,6 +23,11 @@ class HomeController extends Controller
             'visit_time' => $timeDate
         ]);
 
-        return view('frontend/index');
+
+
+        //User get service data
+        $serviceData = json_decode(ServiceModel::all());
+
+        return view('frontend/index', ['serviceData'=>$serviceData]);
     }
 }
