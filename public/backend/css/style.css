@@ -5,3 +5,49 @@ padding: 1% 1% 1% 1% ;
 	width:60px;
 	height:auto;
 }
+
+
+/* Login */
+.login-card{
+    background-color: #F5F5F5;
+    margin-top: 100px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 6px;
+}
+
+.admin-login-title{
+	margin: 15px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.imgPreview{
+	width: 100%;
+	object-fit: cover;
+	height: 320px;
+	border: none;
+	
+}
+
+.imgOnRow{
+	border: none !important;
+	width: 100%;
+	object-fit: cover;
+	height: 160px;
+}
+
+.deletePhoto{
+	margin-left: 0px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	background-color: #ED5E68;
+	color: #ffffff;
+	border-radius: 3px;
+}
+
+#LoadMoreBtn{
+	margin-left: -10px;
+}

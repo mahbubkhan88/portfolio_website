@@ -7,7 +7,7 @@
 @section('content')
 
 
-@include('frontend.banner')
+@include('frontend.slider')
 
 
 @include('frontend.service')

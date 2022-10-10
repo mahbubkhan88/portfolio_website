@@ -8,7 +8,7 @@
                     <li class="nav-item mt-3">ADMIN</li>
                 </ul>
                 <ul class="navbar-nav my-lg-0">
-                    <li class="nav-item"><a href="" class="btn btn-sm btn-danger">Logout</a></li>
+                    <li class="nav-item"><a href="{{ url('/logout') }}" class="btn btn-sm btn-danger">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -18,9 +18,18 @@
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
                     <li class="nav-devider mt-0" style="margin-bottom: 5px"></li>
-                    <li> <a href="{{ url('/dashboard') }}"><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li>
-                    <li> <a href="{{ url('/visitor') }}"><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
+                    <li> <a href="{{ url('dashboard') }}"><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Dashboard</span></a></li>
+                    <li> <a href="{{ url('visitor') }}"><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitors</span></a></li>
+                    <li> <a href="{{ url('sliders') }}"><span> <i class="fas fa-image"></i> </span><span class="hide-menu">Sliders</span></a></li>
                     <li> <a href="{{ url('services') }}"><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
+                    <li> <a href="{{ url('courses') }}"><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Courses</span></a></li>
+                    <li> <a href="{{ url('projects') }}"><span> <i class="fas fa-file-code"></i> </span><span class="hide-menu">Projects</span></a></li>
+                    <li> <a href="{{ url('contacts') }}"><span> <i class="fas fa-envelope"></i> </span><span class="hide-menu">Contacts</span></a></li>
+                    <li> <a href="{{ url('reviews') }}"><span> <i class="fas fa-comment"></i> </span><span class="hide-menu">Reviews</span></a></li>
+                    <li> <a href="{{ url('photos') }}"><span> <i class="fas fa-image"></i> </span><span class="hide-menu">Photo Gallery</span></a></li>
+                    <li> <a href="{{ url('privacy') }}"><span> <i class="fas fa-cog"></i> </span><span class="hide-menu">Privacy Policy</span></a></li>
+                    <li> <a href="{{ url('return') }}"><span> <i class="fas fa-cogs"></i> </span><span class="hide-menu">Return Policy</span></a></li>
+                    <li> <a href="{{ url('term') }}"><span> <i class="fas fa-border-none"></i> </span><span class="hide-menu">Terms & Condition</span></a></li>
                 </ul>
             </nav>
         </div>
